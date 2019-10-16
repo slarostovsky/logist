@@ -1,0 +1,124 @@
+.promo {
+    min-height: 680px;
+    padding: 23px 0 82px 0;
+    background: url(../images/bg/bg_head.jpg) center (center/cover) no-repeat;
+    position: relative;
+
+    &__name {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+
+    &__header {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: $main-color;
+        font-size: 72px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 72px;
+        text-align: center;
+        margin-bottom: 9px;
+    }
+
+    &__subheader {
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 38px;
+    }
+
+    .line {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 27px;
+        padding: 0 100px 0 100px;
+
+        div {
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+
+    }
+
+    hr {
+        display: inline-block;
+        text-align: center;
+        width: 47%;
+
+    }
+
+    &__services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div{
+            min-height: 63px;
+        }
+
+    }
+
+    &__service {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        min-height: 111px;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    &__text {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 16px;
+        text-align: center;
+        margin-top: 13px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .promo{
+        &__services{
+            justify-content: space-around;
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .promo{
+        &__name{
+            font-size: 19px;
+        }
+        &__header{
+            font-size: 50px;
+        }
+        &__subheader{
+            font-size: 30px;
+        }
+        
+        &__service{
+            margin: 0 auto;
+        }
+        &__text{
+            font-size: 22px;
+            line-height: 29px;
+        }
+    .line{
+        display: none;
+    }
+    }
+}

@@ -1,0 +1,14 @@
+.pageup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 40px;
+    right: 40px;
+    
+    img{
+        transform: rotate(90deg);
+        max-width: 40px;
+        max-height: 40px;
+        cursor: pointer;
+    }
+}

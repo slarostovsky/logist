@@ -1,0 +1,49 @@
+.work {
+    padding: 51px 0 57px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__head {
+        color: #ec644b;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 28px;
+    }
+
+    &__text {
+        margin-top: 18px;
+        max-width: 360px;
+        color: #3a3a3a;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 991px){
+    .work{
+        padding-top: 15px;
+        &__wrap{
+            justify-content: space-around;
+        }
+        &__item{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .work{
+        padding:15px 10px;
+        &__img{
+            max-width: 100%;
+        }
+    }
+}

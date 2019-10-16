@@ -1,0 +1,40 @@
+.order {
+    padding: 51px 0 46px 0;
+    background-color: #f3f3f3;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 257px;
+        margin-bottom: 25px;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 11px;
+    }
+
+    &__head {
+        color: $main-color;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: #3a3a3a;
+        font-family: 'Roboto',sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+    }
+}
